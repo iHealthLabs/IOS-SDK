@@ -36,10 +36,7 @@ iHealth Device SDK communicate with iHealth Device by Dock, Bluetooth, Bluetooth
 **Wifi:** iHealth Hs5, iHealth Hs6
 
 
-### How to apply for SDK permissions
-[Click this link]()
-
 
 ### Document for development
-[Click this link]()
+[Click this link](https://github.com/iHealthLabs/IOS-SDK/tree/master/%20Document)
 
