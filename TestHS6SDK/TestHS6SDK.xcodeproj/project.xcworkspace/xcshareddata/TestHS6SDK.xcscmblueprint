@@ -1,0 +1,25 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "f9f7bcdb-0dd6-49ab-9f24-4b51ef9e84c4++2496",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "f9f7bcdb-0dd6-49ab-9f24-4b51ef9e84c4++2496" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "f9f7bcdb-0dd6-49ab-9f24-4b51ef9e84c4++2496" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "5C1A23CC-5336-4FD9-9E53-347D679745E5",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "f9f7bcdb-0dd6-49ab-9f24-4b51ef9e84c4++2496" : "iHealthSDK\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "TestHS6SDK",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "TestHS6SDK\/TestHS6SDK.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "svn:\/\/60.29.171.164:20003\/GZApp",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "f9f7bcdb-0dd6-49ab-9f24-4b51ef9e84c4++2496"
+    }
+  ]
+}
