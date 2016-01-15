@@ -40,3 +40,7 @@ iHealth Device SDK communicate with iHealth Device by Dock, Bluetooth, Bluetooth
 ### Document for development
 [Click this link](https://github.com/iHealthLabs/IOS-SDK/tree/master/%20Document)
 
+
+###Configure
+iOS 9+, please add the configuration in info.plist as follows
+![box-model](https://github.com/iHealthDeviceLabs/iHealthDeviceLabs-Android/blob/master/public/ihealth_device_doc.png?raw=true)
