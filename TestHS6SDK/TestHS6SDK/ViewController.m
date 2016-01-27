@@ -19,7 +19,7 @@
     
     // Do any additional setup after loading the view, typically from a nib.
     
-    currentUser = [[User alloc] init];
+    currentUser = [[HS6User alloc] init];
     #warning ‘clientSecret’ and ‘clientID’ are the only identification for user of SDK, are required registration from iHealth administrator. lvjincan@ihealthlabs.com.cn
     
     currentUser.clientSecret=@"";
@@ -62,7 +62,7 @@
     
     iHealthHS6*hs6=[iHealthHS6 shareIHHS6Controller];
     
-    [hs6 cloudCommandUserBinedQRDeviceWithUser:currentUser deviceID:HS6SerialNub BlockHS6UserAuthentication:^(UserAuthenResult result) {
+    [hs6 cloudCommandUserBinedQRDeviceWithUser:currentUser deviceID:HS6SerialNub BlockHS6UserAuthentication:^(HS6UserAuthenResult result) {
         
         NSLog(@"UserAuthenResult :%u",result);
         

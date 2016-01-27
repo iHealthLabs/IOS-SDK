@@ -18,7 +18,7 @@
 		1878B7951C462B1C002E7EE5 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1878B7941C462B1C002E7EE5 /* SystemConfiguration.framework */; };
 		1878B7971C462B26002E7EE5 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1878B7961C462B26002E7EE5 /* Accelerate.framework */; };
 		1878B7991C462B2B002E7EE5 /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1878B7981C462B2B002E7EE5 /* ExternalAccessory.framework */; };
-		4D0C4B271C575BCF009757D2 /* HS6Library(1.0.1).a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D0C4B261C575BCF009757D2 /* HS6Library(1.0.1).a */; };
+		4D0C4B391C5841E3009757D2 /* HS6Library(1.0.2).a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D0C4B381C5841E3009757D2 /* HS6Library(1.0.2).a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,14 +32,14 @@
 		1878B7801C4627C0002E7EE5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1878B7831C4627C0002E7EE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1878B7851C4627C0002E7EE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1878B78D1C4627FE002E7EE5 /* iHealthHS6.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iHealthHS6.h; sourceTree = "<group>"; };
-		1878B78F1C462845002E7EE5 /* User.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
 		1878B7901C462A73002E7EE5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		1878B7921C462A7D002E7EE5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1878B7941C462B1C002E7EE5 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		1878B7961C462B26002E7EE5 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
 		1878B7981C462B2B002E7EE5 /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
-		4D0C4B261C575BCF009757D2 /* HS6Library(1.0.1).a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "HS6Library(1.0.1).a"; sourceTree = "<group>"; };
+		4D0C4B381C5841E3009757D2 /* HS6Library(1.0.2).a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "HS6Library(1.0.2).a"; sourceTree = "<group>"; };
+		4D0C4B491C58493A009757D2 /* HS6User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HS6User.h; sourceTree = "<group>"; };
+		4D0C4B4A1C58493A009757D2 /* iHealthHS6.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iHealthHS6.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,10 +49,10 @@
 			files = (
 				1878B7991C462B2B002E7EE5 /* ExternalAccessory.framework in Frameworks */,
 				1878B7971C462B26002E7EE5 /* Accelerate.framework in Frameworks */,
+				4D0C4B391C5841E3009757D2 /* HS6Library(1.0.2).a in Frameworks */,
 				1878B7951C462B1C002E7EE5 /* SystemConfiguration.framework in Frameworks */,
 				1878B7931C462A7D002E7EE5 /* Foundation.framework in Frameworks */,
 				1878B7911C462A73002E7EE5 /* UIKit.framework in Frameworks */,
-				4D0C4B271C575BCF009757D2 /* HS6Library(1.0.1).a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,13 +83,13 @@
 		1878B7731C4627C0002E7EE5 /* TestHS6SDK */ = {
 			isa = PBXGroup;
 			children = (
-				4D0C4B261C575BCF009757D2 /* HS6Library(1.0.1).a */,
+				4D0C4B491C58493A009757D2 /* HS6User.h */,
+				4D0C4B4A1C58493A009757D2 /* iHealthHS6.h */,
+				4D0C4B381C5841E3009757D2 /* HS6Library(1.0.2).a */,
 				1878B7771C4627C0002E7EE5 /* AppDelegate.h */,
 				1878B7781C4627C0002E7EE5 /* AppDelegate.m */,
 				1878B77A1C4627C0002E7EE5 /* ViewController.h */,
 				1878B77B1C4627C0002E7EE5 /* ViewController.m */,
-				1878B78D1C4627FE002E7EE5 /* iHealthHS6.h */,
-				1878B78F1C462845002E7EE5 /* User.h */,
 				1878B77D1C4627C0002E7EE5 /* Main.storyboard */,
 				1878B7801C4627C0002E7EE5 /* Assets.xcassets */,
 				1878B7821C4627C0002E7EE5 /* LaunchScreen.storyboard */,

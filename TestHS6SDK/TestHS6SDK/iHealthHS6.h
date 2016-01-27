@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "User.h"
+#import "HS6User.h"
 
 /*HS6 error instruction*/
 /*
@@ -37,7 +37,7 @@ typedef void(^DisBinedQRDeviceBlock)(NSArray *resultArray);
 //unbind QR Device
 typedef void(^DisBinedQRDeviceErrorBlock)(NSString *errorCode);
 
-typedef void (^BlockHS6UserAuthentication)(UserAuthenResult result);
+typedef void (^BlockHS6UserAuthentication)(HS6UserAuthenResult result);
 
 @interface iHealthHS6 : NSObject{
 
@@ -74,14 +74,14 @@ typedef void (^BlockHS6UserAuthentication)(UserAuthenResult result);
  BlockHS6UserAuthentication: The return parameters of ’‘userid’, ‘height’, ’clientID’, and ‘clientSecret’ after verification
  
  The interpretation for the verification:
- UserAuthen_RegisterSuccess: New-user registration succeeded.
- UserAuthen_LoginSuccess: User login succeeded.
- UserAuthen_CombinedSuccess: The user is an iHealth user as well, measurement via SDK has been activated, and the data from the measurement belongs to the user.
- UserAuthen_TrySuccess: Testing without internet connection succeeded.
- UserAuthen_InvalidateUserInfo: Userid/clientID/clientSecret verification failed.
- UserAuthen_SDKInvalidateRight: SDK has not been authorized.
- UserAuthen_UserInvalidateRight: User has not been authorized.
- UserAuthen_InternetError: Internet error, verification failed.
+ HS6UserAuthen_RegisterSuccess: New-user registration succeeded.
+ HS6UserAuthen_LoginSuccess: User login succeeded.
+ HS6UserAuthen_CombinedSuccess: The user is an iHealth user as well, measurement via SDK has been activated, and the data from the measurement belongs to the user.
+ HS6UserAuthen_TrySuccess: Testing without internet connection succeeded.
+ HS6UserAuthen_InvalidateUserInfo: Userid/clientID/clientSecret verification failed.
+ HS6UserAuthen_SDKInvalidateRight: SDK has not been authorized.
+ HS6UserAuthen_UserInvalidateRight: User has not been authorized.
+ HS6UserAuthen_InternetError: Internet error, verification failed.
  The measurement via SDK will be operated in the case of 1-4, and will be terminated if any of 5-8 occurs. The interface needs to be re-called after analyzing the return parameters.
  Notice: when a new user registers via SDK, an ‘iHealth disclaimer’ will pop up automatically, and will require the user to agree in order to continue. SDK applications require an Internet connection; there is 10-day trial period if the SDK cannot connect to the internet, the SDK is fully functional during tryout period, but will be terminated without a working internet connection after 10 days.
  
@@ -98,7 +98,7 @@ typedef void (^BlockHS6UserAuthentication)(UserAuthenResult result);
  refer to “error” : HS6 error instruction.
  */
 
--(void)cloudCommandUserBinedQRDeviceWithUser:(User *)tempUser  deviceID:(NSString *)tempDeviceID BlockHS6UserAuthentication:(BlockHS6UserAuthentication)BlockHS6UserAuthentication binedResult:(BinedQRDeviceBlock)result binedError:(BinedQRDeviceErrorBlock)error;
+-(void)cloudCommandUserBinedQRDeviceWithUser:(HS6User *)tempUser  deviceID:(NSString *)tempDeviceID BlockHS6UserAuthentication:(BlockHS6UserAuthentication)BlockHS6UserAuthentication binedResult:(BinedQRDeviceBlock)result binedError:(BinedQRDeviceErrorBlock)error;
 
 /*unBind QR Device*/
 /*
@@ -118,7 +118,7 @@ typedef void (^BlockHS6UserAuthentication)(UserAuthenResult result);
  */
 
 
--(void)cloudCommandUserDisBinedQRDeviceForUser:(User *)tempUser withDeviceID:(NSString *)tempDeviceID disBinedResult:(DisBinedQRDeviceBlock)result disBinedError:(DisBinedQRDeviceErrorBlock)error;
+-(void)cloudCommandUserDisBinedQRDeviceForUser:(HS6User *)tempUser withDeviceID:(NSString *)tempDeviceID disBinedResult:(DisBinedQRDeviceBlock)result disBinedError:(DisBinedQRDeviceErrorBlock)error;
 
 /*set HS6 wifi*/
 /*

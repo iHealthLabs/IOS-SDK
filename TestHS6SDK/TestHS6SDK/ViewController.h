@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "iHealthHS6.h"
 @interface ViewController : UIViewController{
-    User *currentUser;
+    HS6User *currentUser;
     NSString *HS6SerialNub;
     NSString *wifiPasswrod;
 }
