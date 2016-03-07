@@ -2,6 +2,7 @@
 Update History:  
 1. Update version 1.0.13, enable bit-code function.  
 2. Update version 1.0.14, support BP3L BP7S KD926 KD550BT HS6.(2016.1.11)
+3. Update version 1.0.15, fix PO3 bug(2016.3.7)
 
 
 ### Support iHealth Device for iOS
