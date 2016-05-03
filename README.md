@@ -3,15 +3,15 @@ Update History:
 1. Update version 1.0.13, enable bit-code function.  
 2. Update version 1.0.14, support BP3L BP7S KD926 KD550BT HS6.(2016.1.11)   
 3. Update version 1.0.15, fix PO3 bug(2016.3.7)
-4. Update version 1.0.16, add dataID for measure reault , add calories for sport and bmr.(2016.5.3)
-    a. Add dataID for measure result(BP BG HS AM PO), etc: {"weight":60,"dataID":"xxxxxxx"}
-    b. Add 'activityLevel' property for AM user, 'bmr' property is invalidate now. 
-       activityLevel=1, Sedentary,spend most of day sitting.    
-       activityLevel=2, Active,spend a good part of day doing some physical activity.
-       activityLevel=3, Very Active,spend most of day doing heavy physical activity.
-    c. Modify calories for AM, etc {Calories = 49,Step = 1213,TotalCalories = 656}
-       Calories is for sport only.
-       TotalCalories sum Calories and bmr.
+4. Update version 1.0.16, add dataID for measure reault , add calories for sport and bmr.(2016.5.3)  
+    a. Add dataID for measure result(BP BG HS AM PO), etc: {"weight":60,"dataID":"xxxxxxx"}  
+    b. Add 'activityLevel' property for AM user, 'bmr' property is invalidate now.   
+       activityLevel=1, Sedentary,spend most of day sitting.      
+       activityLevel=2, Active,spend a good part of day doing some physical activity.  
+       activityLevel=3, Very Active,spend most of day doing heavy physical activity.  
+    c. Modify calories for AM, etc {Calories = 49,Step = 1213,TotalCalories = 656}  
+       Calories is for sport only.  
+       TotalCalories sum Calories and bmr.  
 
 
 
