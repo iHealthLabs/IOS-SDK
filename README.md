@@ -1,6 +1,7 @@
 # SDK
 
-##Attentation：The current repository will not update, please clone the [New Repository](https://github.com/iHealthDeviceLabs/iHealthDeviceLabs-iOS)       
+##Attentation：The current repository will not update, please contact: lichao@ihelthlabs.com.cn
+
 
 
 
